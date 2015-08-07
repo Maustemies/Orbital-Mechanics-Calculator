@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>902</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="orbitallabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Orbital Calculations</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="basicdeltavlabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Basic Delta-v</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="basicdvclearbutton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>50</y>
+      <width>107</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="twrlabel">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>10</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>TWR Calculations</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="orbitalvelocitylabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Orbital Velocity</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inclichangelabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Inclination Change</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="twrclearbutton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>20</y>
+      <width>107</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="orbvelclearbutton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>280</y>
+      <width>107</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="incchangeclearbutton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>400</y>
+      <width>107</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>310</y>
+      <width>284</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0" colspan="2">
+      <widget class="QComboBox" name="orbitalvelocitycombo">
+       <item>
+        <property name="text">
+         <string>Choose the Orbital Body</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kerbol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Moho</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Eve</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gilly</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kerbin</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mun</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Minmus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Duna</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ike</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dres</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jool</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Laythe</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vall</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tylo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bop</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Eeloo</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="orbitalvelocityheight">
+       <property name="placeholderText">
+        <string>Height of your orbit in km</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="orbitalvelocitybutton">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Calculate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLineEdit" name="orbitalvelocityanswer"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>430</y>
+      <width>275</width>
+      <height>116</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="incstartlabel">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Inc (start)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" colspan="2">
+      <widget class="QLineEdit" name="incstartlineedit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="incendlabel">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Inc (end)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="2">
+      <widget class="QLineEdit" name="incendlineedit"/>
+     </item>
+     <item row="2" column="0" colspan="3">
+      <widget class="QLabel" name="incchangevelocitylabel">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Orbital velocity</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="incchangevelocitylineedit">
+       <property name="placeholderText">
+        <string>in km/s</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="incchangeresultbutton">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Calculate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="3">
+      <widget class="QLineEdit" name="incchangeresultlineedit">
+       <property name="placeholderText">
+        <string>in km/s</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>67</x>
+      <y>83</y>
+      <width>248</width>
+      <height>142</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="mstartlabel">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Mass (start)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="mstartlineedit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="mendlabel">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Mass (end)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="mendlineedit"/>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QComboBox" name="basicdeltavcombo">
+       <item>
+        <property name="text">
+         <string>Choose the engine in use</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-1R(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-1R(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>24-77(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>24-77(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mk-55(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mk-55(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>O-10(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>O-10(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-1(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-1(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>48-7S(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>48-7S(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-909(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-909(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-T30(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-T30(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-T45(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-T45(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CR-7(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CR-7(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>T-1(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>T-1(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-N(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-N(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Poodle(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Poodle(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Skipper(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Skipper(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mainsail(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mainsail(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LFB KR-1x2(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LFB KR-1x2(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>KR2L+(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>KR2L+(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S3 KS-25x4(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S3 KS-25x4(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RT-5(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RT-5(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RT-10(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RT-10(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BACC(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BACC(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S1 SRB-KD25k(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S1 SRB-KD25k(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sepratron I(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sepratron I(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PB-ION(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PB-ION(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RV-105(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RV-105(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Place-Anywhere 7(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Place-Anywhere 7(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vernor Engine(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vernor Engine(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>J-33 Basic Jet</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>JX-4 Turbo Ramjet</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CR-7 Jet</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="basicdvbutton">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Calculate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="basicdvresultlineedit"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="basicdeltavtotalbutton">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Add to Total:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="basicdeltavtotalresult"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>381</x>
+      <y>61</y>
+      <width>301</width>
+      <height>108</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="twrmasslabel">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Mass of Rocket</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QLineEdit" name="twrmasslineedit"/>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="twrtonlabel">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>t</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QComboBox" name="twrcombo">
+       <item>
+        <property name="text">
+         <string>Choose the engine in use</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-1R(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-1R(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>24-77(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>24-77(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mk-55(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mk-55(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>O-10(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>O-10(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-1(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-1(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>48-7S(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>48-7S(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-909(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-909(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-T30(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-T30(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-T45(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-T45(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CR-7(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CR-7(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>T-1(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>T-1(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-N(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LV-N(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Poodle(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Poodle(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Skipper(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Skipper(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mainsail(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mainsail(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LFB KR-1x2(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LFB KR-1x2(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>KR2L+(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>KR2L+(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S3 KS-25x4(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S3 KS-25x4(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RT-5(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RT-5(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RT-10(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RT-10(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BACC(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BACC(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S1 SRB-KD25k(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S1 SRB-KD25k(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sepratron I(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sepratron I(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PB-ION(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PB-ION(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RV-105(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RV-105(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Place-Anywhere 7(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Place-Anywhere 7(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vernor Engine(atm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vernor Engine(vac)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>J-33 Basic Jet</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>JX-4 Turbo Ramjet</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CR-7 Jet</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="twrengineamount">
+       <property name="placeholderText">
+        <string>Amount of engines</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="twrcalculatebutton">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Calculate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="2">
+      <widget class="QLineEdit" name="twrresultlineedit"/>
+     </item>
+     <item row="2" column="0" colspan="3">
+      <widget class="QComboBox" name="twrbodycombo">
+       <item>
+        <property name="text">
+         <string>Choose the Orbital Body</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kerbol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Moho</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Eve</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gilly</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kerbin</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mun</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Minmus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Duna</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ike</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dres</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jool</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Laythe</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vall</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tylo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bop</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Eeloo</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>902</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
