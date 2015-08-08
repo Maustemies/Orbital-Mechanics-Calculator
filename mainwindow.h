@@ -34,6 +34,8 @@ private slots:
 
     void on_incchangeclearbutton_clicked();
 
+    void on_comboBox_activated(int index);
+
 private:
     Ui::MainWindow *ui;
     double basicunderlying;
@@ -43,6 +45,7 @@ private:
     double orbvelresult;
     float incchangeresult;
     float orbvel, incs, ince;
+    double orbitalperiod;
 };
 
 #endif // MAINWINDOW_H

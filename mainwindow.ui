@@ -1127,7 +1127,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1258,6 +1258,98 @@
        </property>
        <property name="text">
         <string>Km/s</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>381</x>
+      <y>191</y>
+      <width>319</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Geostationary orbit altitude</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>Choose the Orbital Body</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kerbol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Moho</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Eve</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kerbin</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Duna</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dres</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jool</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Eeloo</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="geostatlineedit">
+       <property name="placeholderText">
+        <string>Height of the orbit in km</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="geostatkmlabel">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Km</string>
        </property>
       </widget>
      </item>

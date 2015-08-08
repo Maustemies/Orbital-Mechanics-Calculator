@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
     orbvel = 0;
     incs = 0;
     ince = 0;
+    orbitalperiod = 0;
 }
 
 MainWindow::~MainWindow()
@@ -5583,4 +5584,80 @@ void MainWindow::on_incchangeclearbutton_clicked()
     ui->incendlineedit->setText("");
     ui->incstartlineedit->setText("");
     ui->incchangevelocitylineedit->setText("");
+}
+
+void MainWindow::on_comboBox_activated(int index)
+{
+    double result = 0;
+    double mass = 0;
+    double gconstant = (6.67)*pow(10.0, (-11.0));
+    double equatorial_radius = 0;
+    switch (index) {
+    case 1:
+        orbitalperiod = 432000.00;
+        equatorial_radius = 261600000;
+        mass = (1.75)*(pow (10.0, 28.0));
+        result = ((pow(orbitalperiod, 2.0))*gconstant*mass)/(4*(pow(PI, 2.0)));
+        result = (pow(result, 1/3.))-equatorial_radius;
+        ui->geostatlineedit->setText(QString::number(result/1000));
+        break;
+    case 2:
+        orbitalperiod = 1210000.0;
+        equatorial_radius = 250000;
+        mass = (2.52)*(pow (10.0, 21.0));
+        result = ((pow(orbitalperiod, 2.0))*gconstant*mass)/(4*(pow(PI, 2.0)));
+        result = (pow(result, 1/3.))-equatorial_radius;
+        ui->geostatlineedit->setText(QString::number(result/1000));
+        break;
+    case 3:
+        orbitalperiod = 80500.000;
+        equatorial_radius = 700000;
+        mass = (1.22)*(pow (10.0, 23.0));
+        result = ((pow(orbitalperiod, 2.0))*gconstant*mass)/(4*(pow(PI, 2.0)));
+        result = (pow(result, 1/3.))-equatorial_radius;
+        ui->geostatlineedit->setText(QString::number(result/1000));
+        break;
+    case 4:
+        orbitalperiod = 21599.912;
+        equatorial_radius = 600000;
+        mass = (5.29)*(pow (10.0, 22.0));
+        result = ((pow(orbitalperiod, 2.0))*gconstant*mass)/(4*(pow(PI, 2.0)));
+        result = (pow(result, 1/3.))-equatorial_radius;
+        ui->geostatlineedit->setText(QString::number(result/1000));
+        break;
+    case 5:
+        orbitalperiod = 65517.859;
+        equatorial_radius = 320000;
+        mass = (4.51)*(pow (10.0, 21.0));
+        result = ((pow(orbitalperiod, 2.0))*gconstant*mass)/(4*(pow(PI, 2.0)));
+        result = (pow(result, 1/3.))-equatorial_radius;
+        ui->geostatlineedit->setText(QString::number(result/1000));
+        break;
+    case 6:
+        orbitalperiod = 34800.000;
+        equatorial_radius = 138000;
+        mass = (3.21)*(pow (10.0, 20.0));
+        result = ((pow(orbitalperiod, 2.0))*gconstant*mass)/(4*(pow(PI, 2.0)));
+        result = (pow(result, 1/3.))-equatorial_radius;
+        ui->geostatlineedit->setText(QString::number(result/1000));
+        break;
+    case 7:
+        orbitalperiod = 36000.000;
+        equatorial_radius = 6000000;
+        mass = (4.23)*(pow (10.0, 24.0));
+        result = ((pow(orbitalperiod, 2.0))*gconstant*mass)/(4*(pow(PI, 2.0)));
+        result = (pow(result, 1/3.))-equatorial_radius;
+        ui->geostatlineedit->setText(QString::number(result/1000));
+        break;
+    case 8:
+        orbitalperiod = 19460.000;
+        equatorial_radius = 210000;
+        mass = (1.11)*(pow (10.0, 21.0));
+        result = ((pow(orbitalperiod, 2.0))*gconstant*mass)/(4*(pow(PI, 2.0)));
+        result = (pow(result, 1/3.))-equatorial_radius;
+        ui->geostatlineedit->setText(QString::number(result/1000));
+        break;
+    default:
+        break;
+    }
 }
