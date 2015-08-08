@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <math.h>
+#define PI 3.14159265
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -11,7 +12,11 @@ MainWindow::MainWindow(QWidget *parent) :
     basicresult = 0;
     equatorial_radius = 0;
     twrunderlying = 0;
-    orbvelresult = 0;
+    orbvelresult = 0;    
+    incchangeresult = 0;
+    orbvel = 0;
+    incs = 0;
+    ince = 0;
 }
 
 MainWindow::~MainWindow()
@@ -5544,4 +5549,38 @@ void MainWindow::on_orbvelclearbutton_clicked()
     ui->orbitalvelocityheight->setText("");
     equatorial_radius = 0;
     orbvelresult = 0;
+}
+
+void MainWindow::on_incchangeresultbutton_clicked()
+{
+    orbvel = ui->incchangevelocitylineedit->text().toFloat();
+    incs = ui->incstartlineedit->text().toFloat();
+    ince = ui->incendlineedit->text().toFloat();
+    if ((ince)>(incs)){
+        incchangeresult = (2*orbvel)*(sin(((ince-incs)/2)*PI/180));
+        ui->incchangeresultlineedit->setText(QString::number(incchangeresult));
+    }
+    else if ((ince) == (incs)){
+        incchangeresult = 0;
+        ui->incchangeresultlineedit->setText(QString::number(incchangeresult));
+    }
+    else if ((ince)<(incs)){
+            incchangeresult = (2*orbvel)*(sin(((ince-incs)/(-2))*PI/180));
+            ui->incchangeresultlineedit->setText(QString::number(incchangeresult));
+    }
+    else{
+        ui->incchangeresultlineedit->setText("How the fuck did this happen?");
+    }
+}
+
+void MainWindow::on_incchangeclearbutton_clicked()
+{
+    ince = 0;
+    incs = 0;
+    incchangeresult = 0;
+    orbvel = 0;
+    ui->incchangeresultlineedit->setText("");
+    ui->incendlineedit->setText("");
+    ui->incstartlineedit->setText("");
+    ui->incchangevelocitylineedit->setText("");
 }

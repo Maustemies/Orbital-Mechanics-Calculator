@@ -30,6 +30,10 @@ private slots:
 
     void on_orbvelclearbutton_clicked();
 
+    void on_incchangeresultbutton_clicked();
+
+    void on_incchangeclearbutton_clicked();
+
 private:
     Ui::MainWindow *ui;
     double basicunderlying;
@@ -37,6 +41,8 @@ private:
     double twrunderlying;
     int equatorial_radius;
     double orbvelresult;
+    float incchangeresult;
+    float orbvel, incs, ince;
 };
 
 #endif // MAINWINDOW_H
