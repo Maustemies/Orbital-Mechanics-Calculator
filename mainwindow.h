@@ -34,18 +34,10 @@ private slots:
 
     void on_incchangeclearbutton_clicked();
 
-    void on_comboBox_activated(int index);
+    void on_comboBox_geostat_orbit_activated(int index);
 
 private:
     Ui::MainWindow *ui;
-    double basicunderlying;
-    double basicresult;
-    double twrunderlying;
-    int equatorial_radius;
-    double orbvelresult;
-    float incchangeresult;
-    float orbvel, incs, ince;
-    double orbitalperiod;
 };
 
 #endif // MAINWINDOW_H
